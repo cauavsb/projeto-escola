@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Perpétuo Socorro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <script src="script.js"></script>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <p><img src="imagens/logo-escola-p.png" alt="Logo da escola"></p>
+        <h1>ESCOLA NOSSA SENHORA DO PERPÉTUO SOCORRO</h1>
+        <p>O lugar que prioriza a educação! <br> Da Educação Infantil ao 6° Ano.</p>
+        <nav>
+            <i id="opcoes" class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="itens">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="sub-menu"><a href="#">A escola</a>
+                        <ul class="submenu-items">
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="estrutura.html">Estrutura</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="calendario.html">Calendário acadêmico</a></li>
+                    <li class="sub-menu"><a href="#">Regimento</a>
+                        <ul class="submenu-items">
+                            <li><a href="horario.html">Horário</a></li>
+                            <li><a href="fardamento.html">Fardamento</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#">Contato</a>
+                        <ul class="submenu-items">
+                            <li><a href="fale.html">Fale Conosco</a></li>
+                            <li><a href="localizacao.html">Localização</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>SOBRE A PERPÉTUO SOCORRO</h1>
+            <p>A Escola Perpétuo Socorro é uma instituição de ensino que tem como missão proporcionar educação de qualidade e formação integral aos seus alunos. Com uma trajetória de excelência, a escola busca não apenas transmitir conhecimentos acadêmicos, mas também desenvolver habilidades sociais, emocionais e éticas nos estudantes.</p>
+            <p>Localizada em um ambiente acolhedor e seguro, a Escola Perpétuo Socorro oferece uma variedade de programas educacionais que atendem desde a Educação Infantil até o 6° Ano do Ensino Fundamental. Com uma equipe pedagógica comprometida e qualificada, a escola busca estimular o potencial de cada aluno, incentivando a criatividade, a curiosidade e a busca pelo conhecimento.</p>
+            <p>Além disso, a Escola Perpétuo Socorro valoriza a formação cidadã e o respeito à diversidade, promovendo um ambiente inclusivo e de respeito mútuo. Através de projetos e atividades, os alunos são encorajados a desenvolver habilidades de liderança, trabalho em equipe e responsabilidade social.</p>
+            <p>A Escola Perpétuo Socorro está comprometida em preparar os alunos para os desafios do mundo contemporâneo, proporcionando uma educação de excelência. Com uma sólida base educacional e valores sólidos, os estudantes têm a oportunidade de crescer academicamente, pessoalmente e se tornarem cidadãos conscientes e engajados em sua comunidade.</p>
+            <h2>NOMEAÇÃO DA ESCOLA</h2>
+            <p>A Escola Perpétuo Socorro é uma instituição que honra o nome de Nossa Senhora do Perpétuo Socorro, uma figura venerada na tradição católica. Essa escolha reflete a importância da fé e dos valores religiosos na escola. Através da figura da santa, a escola busca cultivar valores como compaixão, solidariedade, amor ao próximo e dedicação ao estudo.</p>
+            <p>Além de promover conhecimentos acadêmicos, a escola busca uma educação integral, valorizando a formação moral e espiritual dos alunos. Ao inspirar-se na devoção à santa, a escola proporciona um ambiente de respeito, empatia e crescimento pessoal.</p> 
+            <p>Dessa forma, a Escola Perpétuo Socorro busca guiar seus alunos em um caminho de virtude, fé e compromisso com o próximo, oferecendo uma educação sólida baseada em valores éticos.</p>
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/santa-vertical.png" type="image/png">
+                <img src="imagens/santa-horizontal.jpg" alt="dan-droids">
+            </picture>
+            <p>Destacamos também que a Escola Perpétuo Socorro é uma instituição que respeita e acolhe alunos de diferentes religiões. Promovemos um ambiente inclusivo e valorizamos a diversidade religiosa, incentivando o respeito mútuo e o diálogo inter-religioso. Nossa escola garante que todas as atividades e eventos sejam planejados de forma a incluir e representar todos os alunos, independentemente de suas convicções religiosas. Buscamos promover valores como respeito, tolerância e igualdade, contribuindo para a formação de cidadãos conscientes e respeitosos em relação às diferenças religiosas.</p>
+            <h2>SURGIMENTO DO NOSSO SÍMBOLO</h2>
+            <p>Nosso símbolo escolar é representado por diversas cores, e essa escolha não foi feita por acaso. Na verdade, reflete nossa profunda valorização pela diversidade. Acreditamos que a diversidade é uma das maiores riquezas da humanidade, uma fonte de aprendizado, compreensão e crescimento.</p>
+            <p>Juntos, construímos um ambiente escolar acolhedor, onde a diversidade é celebrada e a inclusão é praticada diariamente. Valorizamos as perspectivas únicas de cada aluno e entendemos que é através da diversidade que podemos alcançar um mundo melhor e mais compreensivo.</p>
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/logo-escola.png">
+                <img src="imagens/logo-escola.png" alt="Irina Blok, criadora do Bugdroid">
+            </picture>
+            <aside>
+                <h3>Quer saber mais?</h3>
+                <p>Outro assunto curioso em relação a nossa logo é que cada cor representa um aspecto único da diversidade.</p>
+                <ul>
+                    <li>1 - <abbr title="Paixão e coragem">Vermelho</abbr></li>
+                    <li>2 - <abbr title="Alegria e criatividade">Amarelo</abbr></li>
+                    <li>3 - <abbr title="Tranquilidade e harmonia">Azul</abbr></li>
+                    <li>4 - <abbr title="Energia e entusiasmo">Laranja</abbr></li>
+                    <li>5 - <abbr title="Diversidade cultural e inclusão">Roxo</abbr></li>
+                    <li>6 - <abbr title="Empatia e solidariedade">Rosa</abbr></li>
+                    <li>7 - <abbr title="Vitalidade e conexão com a natureza">Verde</abbr></li>
+                </ul>
+                <p>Ao unir essas sete cores em nosso símbolo escolar, celebramos a diversidade em todas as suas formas. Queremos que cada aluno se sinta representado e valorizado, independentemente de sua origem, identidade, habilidades ou interesses. Em nossa escola, a diversidade é enaltecida como uma força que nos une, proporcionando uma educação rica e inclusiva, onde todos podem aprender, crescer e se tornar cidadãos responsáveis e respeitosos.</p>
+            </aside>
+            <p>Esperamos que você tenha gostado do nosso artigo. Não perca tempo e venha fazer parte da nossa linda família!</p>
+        </article>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

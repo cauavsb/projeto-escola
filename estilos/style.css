@@ -2,12 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
-    font-family: 'Android';
-    src: url(fonte/idroid.otf) format(opentype);
-    font-weight: normal;
-}
-
 :root {
     --cor0: #F20574;
     --cor1: #023373;
@@ -17,7 +11,6 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive;
 }
 
 * {
@@ -84,6 +77,7 @@ nav > a:hover {
 }
 
 main {
+    width: 90vw;
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -96,13 +90,13 @@ main {
 
 main h1 {
     color: var(--cor4);
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-destaque);
     font-weight: normal;
     font-size: 1.8em;
 }
 
 main h2 {
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-destaque);
     color: var(--cor4);
     font-size: 1.3em;
     font-weight: normal;
@@ -200,3 +194,95 @@ footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
 }
+
+/* Estilos do menu */
+
+i#opcoes {
+    background-color: var(--cor3);
+    color: var(--cor4);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#opcoes:hover {
+    background-color: var(--cor4);
+    color: white;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--cor3);
+    color: var(--cor4);
+}
+
+menu > ul > li > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor3);
+}
+
+/* Estilos do submenu */
+
+.sub-menu {
+    position: relative;
+}
+
+.sub-menu > ul {
+    list-style-type: none;
+}
+  
+.submenu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--cor4);
+    padding: 10px;
+    z-index: 999;
+}
+  
+.sub-menu:hover .submenu-items {
+    display: block;
+}
+  
+.submenu-items li {
+    margin-bottom: 5px;
+}
+  
+.submenu-items a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+  
+.submenu-items a:hover {
+    background-color: var(--cor3);
+}
+
+iframe {
+    width: 90vw;
+    min-width: 300px;
+    max-width: 768px;
+}
+
+ul#fale > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul#fale > li > a {
+    background-color: transparent;
+}
+
