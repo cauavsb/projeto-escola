@@ -3,15 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --cor0: #F20574;
-    --cor1: #023373;
-    --cor2: #078C03;
-    --cor3: #F2B33D;
-    --cor4: #F20505;
+    --azul1: #7373E6;
+    --azul2: #4354C9;
+    --azul3: #2D2DE0;
+    --azul4: #2323AD;
+
+    --amarelo3: #FFF25E;
+    --amarelo4: #FFED29;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
+
+/* Estilos gerais */
 
 * {
     margin: 0px;
@@ -19,7 +23,7 @@
 }
 
 body {
-    background-color: #F7D088;
+    background-color: var(--azul1);
     font-family: var(--fonte-padrao);
 }
 
@@ -27,15 +31,17 @@ a.externo::after {
     content: '\00A0\1F517';
 }
 
+/* Estilos do header */
+
 header {
-    background-image: linear-gradient(to bottom, #F7D088,#F2B357, #F5B53D, #C29046);
+    background-image: linear-gradient(to bottom, var(--azul1), var(--azul2), var(--azul3), var(--azul4));
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
 }
 
 header > h1 {
-    color: var(--cor4);
+    color: var(--amarelo4);
     font-family: var(--fonte-destaque);
     font-size: 3em;
     font-weight: normal;
@@ -47,7 +53,7 @@ header > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     font-weight: bold;
-    color: var(--cor4);
+    color: var(--amarelo4);
     max-width: 600px;
     padding-right: 10px;
     padding-left: 10px;
@@ -56,14 +62,16 @@ header > p {
     /*text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);*/
 }
 
+/* Estilos do nav */
+
 nav {
-    background-color: var(--cor4);
+    background-color: var(--amarelo4);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 }
 
 nav > a {
-    color: var(--cor3);
+    color: var(--azul1);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -72,9 +80,11 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: var(--cor3);
-    color: var(--cor4);
+    background-color: var(--azul1);
+    color: var(--amarelo4);
 }
+
+/* Estilos do main */
 
 main {
     width: 90vw;
@@ -89,7 +99,7 @@ main {
 }
 
 main h1 {
-    color: var(--cor4);
+    color: var(--azul4);
     font-family: var(--fonte-destaque);
     font-weight: normal;
     font-size: 1.8em;
@@ -97,10 +107,10 @@ main h1 {
 
 main h2 {
     font-family: var(--fonte-destaque);
-    color: var(--cor4);
+    color: var(--azul4);
     font-size: 1.3em;
     font-weight: normal;
-    background-image: linear-gradient(to right, var(--cor3), transparent);
+    background-image: linear-gradient(to right, var(--azul1), transparent);
     text-indent: 8px;
 }
 
@@ -113,7 +123,7 @@ main p {
 }
 
 main strong {
-    color: var(--cor4);
+    color: var(--azul4);
     font-weight: bold;
 }
 
@@ -124,47 +134,28 @@ main a {
     background-color: var(--cor1);
     padding: 2px 6px;
 }
- main a:hover {
+
+main a:hover {
     text-decoration: underline;
     color: var(--cor4);
- }
+}
 
 main img {
     width: 100%;
 }
 
-main img.pequena {
-    max-width: 350px;
-    display: block;
-    margin: auto;
-}
-
-div.video {
-    background-color: var(--cor5);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    padding-bottom: 58%;
-    position: relative;
-}
-
-div.video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
+/* Estilos do aside */
 
 aside {
-    background-color: #F7D088;
+    background-color: var(--azul1);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
 
 aside > h3 {
-    background-color: var(--cor4);
-    color: white;
+    background-color: var(--amarelo4);
+    color: var(--azul4);
     padding: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
@@ -176,30 +167,11 @@ aside > ul {
     columns: 2;
 }
 
-footer {
-    background-color: var(--cor5);
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
-}
-
-footer > p > a {
-    color: white;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: var(--cor1);
-}
-
 /* Estilos do menu */
 
 i#opcoes {
-    background-color: var(--cor3);
-    color: var(--cor4);
+    background-color: var(--azul4);
+    color: var(--amarelo4);
     display: block;
     text-align: center;
     padding: 10px;
@@ -207,8 +179,7 @@ i#opcoes {
 }
 
 i#opcoes:hover {
-    background-color: var(--cor4);
-    color: white;
+    color: var(--amarelo4);
 }
 
 menu {
@@ -224,13 +195,13 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: var(--cor3);
-    color: var(--cor4);
+    background-color: var(--azul4);
+    color: var(--amarelo4);
 }
 
 menu > ul > li > a:hover {
-    background-color: var(--cor4);
-    color: var(--cor3);
+    background-color: var(--amarelo4);
+    color: var(--azul4);
 }
 
 /* Estilos do submenu */
@@ -248,7 +219,7 @@ menu > ul > li > a:hover {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--cor4);
+    background-color: var(--azul4);
     padding: 10px;
     z-index: 999;
 }
@@ -268,7 +239,8 @@ menu > ul > li > a:hover {
 }
   
 .submenu-items a:hover {
-    background-color: var(--cor3);
+    background-color: var(--amarelo3);
+    color: var(--azul4);
 }
 
 iframe {
@@ -285,4 +257,3 @@ ul#fale > li {
 ul#fale > li > a {
     background-color: transparent;
 }
-
